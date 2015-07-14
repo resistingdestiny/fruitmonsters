@@ -25,7 +25,7 @@ section .item {
   width: 22%;
   margin:  25px 1%;
   float: left;
-  height: 125px;
+  height: 100px;
 }
 
 section .item:hover {
@@ -98,3 +98,60 @@ section .item a{
   color: #fff;
   text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+.details {
+  background-color: #FFE168;
+  text-align: center;
+}
+
+section.top a{
+  text-decoration: none;
+  text-align: left;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+
+.details section.top i {
+  font-size: 2em;
+  color: #E5BB4C;
+  text-align: left;
+}
+
+section.top i.center {
+  font-size: 3em;
+}
+
+section.description {
+  background-color: #E5BB4C;
+  margin: 15px;
+  padding: 15px;
+  width: calc(100% - 60px);
+}
+
+section.description h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+section.description p {
+  color: #fff;
+}
+
+.details .item{
+  color: #E5BB4C;
+  float: left;
+  width: 46%;
+  margin: 1%;
+}
+
