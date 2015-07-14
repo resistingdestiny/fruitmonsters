@@ -157,6 +157,7 @@ section.description p {
 }
 
 .notice{
+  display: none;
   top: 0;
   bottom: 0;
   left: 0;
