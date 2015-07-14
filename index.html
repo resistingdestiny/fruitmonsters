@@ -58,7 +58,7 @@ if (false) {
 			alert("You've died")}, 10000);
 			
 			var position = new google.maps.LatLng(51.5243842, -0.094736);
-
+			var positionhome = new google.maps.LatLng(51.5256702, -0.087561);
 			
 			marker =new google.maps.Marker({map:map, optimized: false, visible:checkvisible, icon:character});
 
@@ -80,6 +80,14 @@ if (false) {
         animation: google.maps.Animation.DROP,
         position: position,
         icon: "unnamed.png"
+    });
+    
+    new google.maps.Marker({
+        map:map,
+        draggable:false,
+        animation: google.maps.Animation.DROP,
+        position: positionhome,
+        icon: "home.png"
     });
 		}
 
