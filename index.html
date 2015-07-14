@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
-	<title>Pricing for LDN</title>
+	<title>Fruitmonster</title>
 	<meta name="description" content="Fruitmonsters">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheet.css">
@@ -58,8 +58,10 @@ if (false) {
 			alert("You've died")}, 10000);
 			
 			var position = new google.maps.LatLng(51.5243842, -0.094736);
+
 			
 			marker =new google.maps.Marker({map:map, optimized: false, visible:checkvisible, icon:character});
+
 			for (i = 0; i < pathCoords.length; i++) {
 				setTimeout(function(coords) {
 					route.getPath().push(coords);
@@ -88,7 +90,7 @@ if (false) {
 			var directionsService = new google.maps.DirectionsService();
 
 			var start = new google.maps.LatLng(51.5283026, -0.0819007);
-			
+
 			var end = probability;
 
 			var request = {
@@ -119,27 +121,29 @@ if (false) {
 	  </div>
 	  <div class="item">
 	  	<i class="icon-book-2"></i>
-	  </div>
-	  <div class="item active">
-	  	<i class="icon-book-2"></i>
+	  	<p>Adapt your driving</p>
 	  </div>
 	  <div class="item">
-	  	<i class="icon-book-2"></i>
+	  </div>
+	  <div class="item">
 	  </div>
 	</section>
 	<section class="chest">
 	  <div class="item title">
 	  	<i class="icon-treasure-chest-1"></i>
 	  </div>
-	  <div class="item">
+	  <div class="item active">
 	  	<i class="icon-book-2"></i>
+	  	<p>Adapt your driving</p>
 	  </div>
 	  <div class="item">
 	  	<i class="icon-bicycle"></i>
+	  	<p>Bike</p>
 	  </div>
 
 	  <div class="item">
 	  	<i class="icon-book-2"></i>
+	  	<p>White diagonal stripes</p>
 	  </div>
 	</section>
 </body>
