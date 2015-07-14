@@ -1,0 +1,83 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+i{
+  font-family: untitled-font-2;
+  font-size: 4em;
+}
+
+section {
+  width: 100%;
+}
+
+section .item {
+  width: 22%;
+  margin:  25px 1%;
+  display: inline-block;
+  height: 90px;
+}
+
+section .item:hover {
+  cursor: hover;
+}
+
+section .item i{
+  margin-left: 12px;
+}
+
+section .item.active i{
+  color: #fff;
+}
+
+section.map {
+  height: 320px;
+}
+
+#map{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section.inventory {
+  background-color: #3FB34F;
+  color: #fff;
+}
+
+section.inventory .item {
+  background-color: #139148;
+  color: #3FB34F;
+}
+
+section.chest {
+  height: auto;
+  min-height: 400px;
+  background-color: #1073B9;
+}
+
+section.chest .item {
+  background-color: #1C53A5;
+  color: #1073B9;
+}
+
+section.inventory .item.active {
+  color: #fff;
+}
+
+section.chest .item.active {
+  color: #fff;
+}
+
+section .item.title{
+  background-color: transparent;
+}
+
+section.inventory .item.title i{
+  color: #139148;
+}
+
+section.chest .item.title i{
+  color: #1C53A5;
+}
