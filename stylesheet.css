@@ -16,7 +16,6 @@ i{
   font-style: normal;
 }
 
-
 section {
   float: left;
   width: 100%;
@@ -42,6 +41,7 @@ section .item p{
   font-size: .8em;
   text-align: center;
 }
+
 
 section .item.active i{
   color: #fff;
@@ -70,12 +70,12 @@ section.inventory .item {
 section.chest {
   height: auto;
   min-height: 400px;
-  background-color: #1073B9;
+  background-color: #FFE168;
 }
 
 section.chest .item {
-  background-color: #1C53A5;
-  color: #1073B9;
+  background-color: #E5BB4C;
+  color: #FFE168;
 }
 
 section.chest .item.active {
@@ -91,5 +91,10 @@ section.inventory .item.title i{
 }
 
 section.chest .item.title i{
-  color: #1C53A5;
+  color: #E5BB4C;
+}
+
+section .item a{
+  color: #fff;
+  text-decoration: none;
 }
