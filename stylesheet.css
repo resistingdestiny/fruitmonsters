@@ -49,6 +49,7 @@ section .item.active i{
 
 section.map {
   height: 320px;
+  position: relative;
 }
 
 #map{
@@ -155,3 +156,15 @@ section.description p {
   margin: 1%;
 }
 
+.notice{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F70101;
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  padding: 15px;
+}
