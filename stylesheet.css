@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+}
+
+section .item {
+  width: 23%;
+  margin:  25px 1%;
+  display: inline-block;
+  height: 90px;
+}
+
+section.map {
+  height: 320px;
+}
+
+#map{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section.inventory {
+  background-color: #3FB34F;
+}
+
+section.inventory .item {
+  background-color: #139148;
+  color: #3FB34F;
+}
+
+section.chest {
+  height: auto;
+  min-height: 400px;
+  background-color: #1073B9;
+}
+
+section.chest .item {
+  background-color: #1C53A5;
+  color: #1073B9;
+}

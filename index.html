@@ -8,13 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheet.css">
 
-	<style>
-		html, body, #map {
-			height: 100%;
-			margin: 0px;
-			padding: 0px
-		}
-	</style>
+
 
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=geometry"></script>
 	<script>
@@ -97,8 +91,6 @@ if (true) {
 				}
 			});
 		}
-
-
 		google.maps.event.addDomListener(window, 'load', initialize);
 
 
@@ -106,8 +98,9 @@ if (true) {
 	</script>
 </head>
 <body>
-	<section class="map"></section>
+	<section class="map">
 		<div id="map"></div>
+	</section>
 	<section class="inventory">
 	  <i class="backpack-icon"></i>
 	  <div class="item"></div>
