@@ -45,6 +45,8 @@
 				editable: false,
 				map:map
 			});
+			
+			var position = new google.maps.LatLng(51.5243842, -0.094736);
 
 			marker=new google.maps.Marker({map:map, optimized: false, icon:"http://obviam.net/wp-content/uploads/2010/09/walk_elaine_anim.gif"});
 			for (i = 0; i < pathCoords.length; i++) {
@@ -53,8 +55,18 @@
 					moveMarker(map, marker, coords);
 				}, 200 * i, pathCoords[i]);
 			}
+			
+		
+		new google.maps.Marker({
+        map:map,
+        draggable:false,
+        animation: google.maps.Animation.DROP,
+        position: position,
+        icon: "https://mail.google.com/mail/u/1/?ui=2&ik=5f1dd557d2&view=fimg&th=14e8c1dff22593c1&attid=0.1&disp=emb&realattid=14e8c1db3a0580d8faf1&attbid=ANGjdJ-yaTKcY3bpLpxlaYJgISqMqT1XzsjgTe_vl7UdpE6vV-AgRUfiOpSqVeK_PM5Foa6BHWZVNv3CbPsgCS4TrNokXKa1k-hgiEiTvhnqJK8ywB2FfwugLJ48B_g&sz=s0-l75-ft&ats=1436871852569&rm=14e8c1dff22593c1&zw&atsh=1"
+    });
 		}
 
+		
 
 
 		function getDirections(map) {
@@ -65,7 +77,7 @@
 				var probability = new google.maps.LatLng(51.5256702, -0.087561);
 			}
 			else {
-				var probability = new google.maps.LatLng(51.5218682, -0.090430);
+				var probability = new google.maps.LatLng(51.5243842, -0.094736);
 			};
 
 			var end = probability;
