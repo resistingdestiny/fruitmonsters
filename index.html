@@ -61,6 +61,7 @@ if (false) {
 
 			var position = new google.maps.LatLng(51.5243842, -0.094736);
 			var positionhome = new google.maps.LatLng(51.5256702, -0.087561);
+			var positiongold =new google.maps.LatLng(51.5283026, -0.0819007);
 
 			marker =new google.maps.Marker({map:map, optimized: false, visible:checkvisible, icon:character});
 
@@ -91,9 +92,18 @@ if (false) {
         position: positionhome,
         icon: "home.png"
     });
-		}
+		
+		
+		new google.maps.Marker({
+        map:map,
+        draggable:false,
+        animation: google.maps.Animation.DROP,
+        position: positiongold,
+        icon: "gold.png"
+    });
+		
 
-
+};
 
 
 		function getDirections(map) {

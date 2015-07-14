@@ -169,3 +169,16 @@ section.description p {
   text-align: center;
   padding: 15px;
 }
+.success{
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3FB34F;
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  padding: 15px;
+}

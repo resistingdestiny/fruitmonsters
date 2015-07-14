@@ -57,11 +57,13 @@ if (true) {
 			setTimeout(function () {
 			var checkvisible =  false;
 
-			}, 10000);
+			$(".success").show()}, 1000
+			);
 
 
 			var position = new google.maps.LatLng(51.5243842, -0.094736);
 			var positionhome = new google.maps.LatLng(51.5256702, -0.087561);
+			var positiongold =new google.maps.LatLng(51.5283026, -0.0819007);
 
 			marker =new google.maps.Marker({map:map, optimized: false, visible:checkvisible, icon:character});
 
@@ -91,6 +93,14 @@ if (true) {
         animation: google.maps.Animation.DROP,
         position: positionhome,
         icon: "home.png"
+    });
+    
+    new google.maps.Marker({
+        map:map,
+        draggable:false,
+        animation: google.maps.Animation.DROP,
+        position: positiongold,
+        icon: "gold.png"
     });
 		}
 
@@ -124,10 +134,10 @@ if (true) {
 </head>
 <body>
 	<section class="map">
-		<div class="notice">
-			<h1>You were driving too fast on a country lane</h1>
-			<h1>You didn't slow down for an unmarked junction</h1>
-			<h1>-10 gold</h1>
+		<div class="success">
+			<h1>Congratulations, you drove carefully and kept within the speed limit!</h1>
+			
+			<h1>+10 gold</h1>
 		</div>
 		<div id="map"></div>
 
