@@ -63,6 +63,7 @@ if (true) {
 				setTimeout(function(coords) {
 					route.getPath().push(coords);
 					moveMarker(map, marker, coords);
+					console.log(coords);
 				}, 200 * i, pathCoords[i]);
 			}
 			
@@ -101,7 +102,7 @@ if (true) {
 
 		google.maps.event.addDomListener(window, 'load', initialize);
 
-
+			
 
 	</script>
 </head>
