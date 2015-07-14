@@ -1,22 +1,32 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: 'ginger';
 }
 
 i{
   font-family: untitled-font-2;
-  font-size: 4em;
+  font-size: 3em;
+}
+@font-face {
+  font-family: 'ginger';
+  src: url("fonts/f37ginger-bold-webfont.eot");
+  src: url("fonts/f37ginger-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/f37ginger-bold-webfont.woff") format("woff"), url("fonts/f37ginger-bold-webfont.ttf") format("truetype"), url("fonts/f37ginger-bold-webfont.svg#f37_gingerbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
+
 section {
+  float: left;
   width: 100%;
 }
 
 section .item {
   width: 22%;
   margin:  25px 1%;
-  display: inline-block;
-  height: 90px;
+  float: left;
+  height: 125px;
 }
 
 section .item:hover {
@@ -25,6 +35,12 @@ section .item:hover {
 
 section .item i{
   margin-left: 12px;
+}
+
+section .item p{
+  margin: 0;
+  font-size: .8em;
+  text-align: center;
 }
 
 section .item.active i{
@@ -48,7 +64,7 @@ section.inventory {
 
 section.inventory .item {
   background-color: #139148;
-  color: #3FB34F;
+  color: #fff;
 }
 
 section.chest {
@@ -60,10 +76,6 @@ section.chest {
 section.chest .item {
   background-color: #1C53A5;
   color: #1073B9;
-}
-
-section.inventory .item.active {
-  color: #fff;
 }
 
 section.chest .item.active {
